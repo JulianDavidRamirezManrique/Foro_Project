@@ -28,8 +28,12 @@ envigado=eq.Equipo(equipos[19]["club"],equipos[19]["PJ"],equipos[19]["GTriunfos"
 
 tabla = [once_caldas,america,tolima,fortaleza,atl_nacional,millonarios,pasto,santa_fe,aguilas,junior,la_equidad,dep_pereira,bucaramanga,alianza,patriotas,medellin,dep_cali,jaguares,boyaca_chico,envigado]
 
-print("a",medellin.goles_a_favor,dep_cali.goles_a_favor)
+for equipos in tabla:
+    if equipos.partidos_jugados != equipos.partidos_ganados+equipos.partidos_empatados+equipos.partidos_perdidos or equipos.puntos != equipos.partidos_ganados*3+equipos.partidos_empatados:    
+        print("Los datos son incorrectos")
+        print(equipos)
+tabla_ordenada = sorted(tabla, key=lambda x: x.puntos, reverse=True)
 
-print(pt.partido(medellin,dep_cali,3))
-
-print("d",medellin.goles_a_favor,dep_cali.goles_a_favor)
+for equipos in tabla_ordenada:
+    print(equipos.club, equipos.posicion(tabla_ordenada), equipos.puntos)
+  

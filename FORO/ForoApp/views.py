@@ -37,4 +37,225 @@ def politica_de_datos(request):
     return render(request,'home/tratamiento_de_datos.html',{})
 
 def votes(request):
-    return render(request,'votes/votes.html',{'data':[	{"club":"Once Caldas","PJ":10,"GTriunfos":7,"EEmpates":2,"PDerrotas":1,"GF":16,"GC":7,"DG":9,"PtsPuntos":23},{"club":"América","PJ":8,"GTriunfos":6,"EEmpates":1,"PDerrotas":1,"GF":13,"GC":5,"DG":8,"PtsPuntos":19},{"club":"Tolima","PJ":10,"GTriunfos":5,"EEmpates":2,"PDerrotas":3,"GF":15,"GC":8,"DG":7,"PtsPuntos":17},{"club":"Fortaleza","PJ":10,"GTriunfos":4,"EEmpates":5,"PDerrotas":1,"GF":13,"GC":9,"DG":4,"PtsPuntos":17},{"club":"Atlético Nacional","PJ":8,"GTriunfos":5,"EEmpates":1,"PDerrotas":2,"GF":12,"GC":7,"DG":5,"PtsPuntos":16},{"club":"Millonarios","PJ":9,"GTriunfos":4,"EEmpates":2,"PDerrotas":3,"GF":13,"GC":9,"DG":4,"PtsPuntos":14},{"club":"Pasto","PJ":9,"GTriunfos":4,"EEmpates":2,"PDerrotas":3,"GF":9,"GC":6,"DG":3,"PtsPuntos":14},{"club":"Santa Fe","PJ":6,"GTriunfos":4,"EEmpates":1,"PDerrotas":1,"GF":8,"GC":4,"DG":4,"PtsPuntos":13},{"club":"Águilas Doradas","PJ":8,"GTriunfos":3,"EEmpates":3,"PDerrotas":2,"GF":9,"GC":8,"DG":1,"PtsPuntos":12},{"club":"Junior","PJ":8,"GTriunfos":3,"EEmpates":3,"PDerrotas":2,"GF":8,"GC":7,"DG":1,"PtsPuntos":12},{"club":"La Equidad","PJ":9,"GTriunfos":3,"EEmpates":3,"PDerrotas":3,"GF":7,"GC":11,"DG":-4,"PtsPuntos":12},{"club":"Deportivo Pereira","PJ":8,"GTriunfos":3,"EEmpates":1,"PDerrotas":4,"GF":5,"GC":6,"DG":-1,"PtsPuntos":10},{"club":"Bucaramanga","PJ":9,"GTriunfos":3,"EEmpates":1,"PDerrotas":5,"GF":7,"GC":10,"DG":-3,"PtsPuntos":10},{"club":"Alianza","PJ":8,"GTriunfos":2,"EEmpates":3,"PDerrotas":3,"GF":10,"GC":9,"DG":1,"PtsPuntos":9},{"club":"Patriotas","PJ":10,"GTriunfos":2,"EEmpates":3,"PDerrotas":5,"GF":10,"GC":15,"DG":-5,"PtsPuntos":9},{"club":"Medellín","PJ":8,"GTriunfos":1,"EEmpates":5,"PDerrotas":2,"GF":6,"GC":8,"DG":-2,"PtsPuntos":8},{"club":"Deportivo Cali","PJ":9,"GTriunfos":2,"EEmpates":1,"PDerrotas":6,"GF":7,"GC":15,"DG":-8,"PtsPuntos":7},{"club":"Jaguares","PJ":10,"GTriunfos":1,"EEmpates":3,"PDerrotas":6,"GF":2,"GC":10,"DG":-8,"PtsPuntos":6},{"club":"Boyacá Chicó","PJ":9,"GTriunfos":1,"EEmpates":2,"PDerrotas":6,"GF":5,"GC":13,"DG":-8,"PtsPuntos":5},{"club":"Envigado","PJ":8,"GTriunfos":1,"EEmpates":2,"PDerrotas":5,"GF":4,"GC":12,"DG":-8,"PtsPuntos":5}]})
+    return render(request,'votes/votes.html',{'data':[
+    {
+        "club": "Once Caldas",
+        "PJ": 14,
+        "GTriunfos": 9,
+        "EEmpates": 2,
+        "PDerrotas": 3,
+        "GF": 19,
+        "GC": 11,
+        "DG": 8,
+        "PtsPuntos": 29
+    },
+    {
+        "club": "América",
+        "PJ": 12,
+        "GTriunfos": 9,
+        "EEmpates": 2,
+        "PDerrotas": 1,
+        "GF": 19,
+        "GC": 8,
+        "DG": 12,
+        "PtsPuntos": 29
+    },
+    {
+        "club": "Tolima",
+        "PJ": 13,
+        "GTriunfos": 6,
+        "EEmpates": 3,
+        "PDerrotas": 4,
+        "GF": 16,
+        "GC": 9,
+        "DG": 7,
+        "PtsPuntos": 21
+    },
+    {
+        "club": "Fortaleza",
+        "PJ": 13,
+        "GTriunfos": 5,
+        "EEmpates": 6,
+        "PDerrotas": 2,
+        "GF": 18,
+        "GC": 14,
+        "DG": 4,
+        "PtsPuntos": 21
+    },
+    {
+        "club": "Atlético Nacional",
+        "PJ": 12,
+        "GTriunfos": 7,
+        "EEmpates": 2,
+        "PDerrotas": 3,
+        "GF": 21,
+        "GC": 12,
+        "DG": 9,
+        "PtsPuntos": 23
+    },
+    {
+        "club": "Millonarios",
+        "PJ": 13,
+        "GTriunfos": 6,
+        "EEmpates": 3,
+        "PDerrotas": 4,
+        "GF": 18,
+        "GC": 11,
+        "DG": 7,
+        "PtsPuntos": 21
+    },
+    {
+        "club": "Pasto",
+        "PJ": 14,
+        "GTriunfos": 6,
+        "EEmpates": 2,
+        "PDerrotas": 6,
+        "GF": 13,
+        "GC": 11,
+        "DG": 2,
+        "PtsPuntos": 20
+    },
+    {
+        "club": "Santa Fe",
+        "PJ": 13,
+        "GTriunfos": 8,
+        "EEmpates": 4,
+        "PDerrotas": 1,
+        "GF": 19,
+        "GC": 8,
+        "DG": 11,
+        "PtsPuntos": 28
+    },
+    {
+        "club": "Águilas Doradas",
+        "PJ": 12,
+        "GTriunfos": 4,
+        "EEmpates": 6,
+        "PDerrotas": 2,
+        "GF": 15,
+        "GC": 13,
+        "DG": 2,
+        "PtsPuntos": 18
+    },
+    {
+        "club": "Junior",
+        "PJ": 12,
+        "GTriunfos": 4,
+        "EEmpates": 4,
+        "PDerrotas": 4,
+        "GF": 14,
+        "GC": 14,
+        "DG": 0,
+        "PtsPuntos": 16
+    },
+    {
+        "club": "La Equidad",
+        "PJ": 13,
+        "GTriunfos": 4,
+        "EEmpates": 5,
+        "PDerrotas": 4,
+        "GF": 9,
+        "GC": 13,
+        "DG": -4,
+        "PtsPuntos": 17
+    },
+    {
+        "club": "Deportivo Pereira",
+        "PJ": 13,
+        "GTriunfos": 4,
+        "EEmpates": 4,
+        "PDerrotas": 5,
+        "GF": 9,
+        "GC": 10,
+        "DG": -1,
+        "PtsPuntos": 17
+    },
+    {
+        "club": "Bucaramanga",
+        "PJ": 13,
+        "GTriunfos": 5,
+        "EEmpates": 3,
+        "PDerrotas": 5,
+        "GF": 10,
+        "GC": 11,
+        "DG": -1,
+        "PtsPuntos": 18
+    },
+    {
+        "club": "Alianza",
+        "PJ": 13,
+        "GTriunfos": 3,
+        "EEmpates": 3,
+        "PDerrotas": 7,
+        "GF": 11,
+        "GC": 15,
+        "DG": -4,
+        "PtsPuntos": 12
+    },
+    {
+        "club": "Patriotas",
+        "PJ": 14,
+        "GTriunfos": 3,
+        "EEmpates": 4,
+        "PDerrotas": 7,
+        "GF": 15,
+        "GC": 21,
+        "DG": -6,
+        "PtsPuntos": 13
+    },
+    {
+        "club": "Medellín",
+        "PJ": 13,
+        "GTriunfos": 3,
+        "EEmpates": 7,
+        "PDerrotas": 3,
+        "GF": 10,
+        "GC": 9,
+        "DG": 1,
+        "PtsPuntos": 16
+    },
+    {
+        "club": "Deportivo Cali",
+        "PJ": 13,
+        "GTriunfos": 2,
+        "EEmpates": 5,
+        "PDerrotas": 7,
+        "GF": 12,
+        "GC": 21,
+        "DG": -9,
+        "PtsPuntos": 16
+    },
+    {
+        "club": "Jaguares",
+        "PJ": 13,
+        "GTriunfos": 1,
+        "EEmpates": 5,
+        "PDerrotas": 7,
+        "GF": 4,
+        "GC": 14,
+        "DG": -10,
+        "PtsPuntos": 8
+    },
+    {
+        "club": "Boyacá Chicó",
+        "PJ": 13,
+        "GTriunfos": 2,
+        "EEmpates": 2,
+        "PDerrotas": 9,
+        "GF": 9,
+        "GC": 24,
+        "DG": -15,
+        "PtsPuntos": 8
+    },
+    {
+        "club": "Envigado",
+        "PJ": 12,
+        "GTriunfos": 1,
+        "EEmpates": 3,
+        "PDerrotas": 8,
+        "GF": 4,
+        "GC": 17,
+        "DG": -13,
+        "PtsPuntos": 6
+    }
+]})
